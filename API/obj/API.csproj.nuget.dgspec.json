@@ -44,6 +44,12 @@
               "target": "Package",
               "version": "[6.0.4, )"
             },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
             "Microsoft.Owin.Host.SystemWeb": {
               "target": "Package",
               "version": "[4.2.1, )"
@@ -51,6 +57,14 @@
             "Microsoft.Owin.Security.OAuth": {
               "target": "Package",
               "version": "[4.2.1, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.4, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

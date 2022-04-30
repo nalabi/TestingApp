@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BongumusaN\\Projects\\DatingApp\\API\\API.csproj": {}
+    "c:\\Users\\BongumusaN\\Projects\\DatingApp\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BongumusaN\\Projects\\DatingApp\\API\\API.csproj": {
+    "c:\\Users\\BongumusaN\\Projects\\DatingApp\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BongumusaN\\Projects\\DatingApp\\API\\API.csproj",
+        "projectUniqueName": "c:\\Users\\BongumusaN\\Projects\\DatingApp\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\BongumusaN\\Projects\\DatingApp\\API\\API.csproj",
+        "projectPath": "c:\\Users\\BongumusaN\\Projects\\DatingApp\\API\\API.csproj",
         "packagesPath": "C:\\Users\\BongumusaN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BongumusaN\\Projects\\DatingApp\\API\\obj\\",
+        "outputPath": "c:\\Users\\BongumusaN\\Projects\\DatingApp\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\BongumusaN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,11 +44,21 @@
               "target": "Package",
               "version": "[6.0.4, )"
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.4, )"
+            },
+            "Microsoft.Extensions.Hosting.WindowsServices": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             },
             "Microsoft.Owin.Host.SystemWeb": {
               "target": "Package",

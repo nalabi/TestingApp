@@ -1931,11 +1931,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\BongumusaN\\Projects\\DatingApp\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\BongumusaN\\Projects\\DatingApp\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "c:\\Users\\BongumusaN\\Projects\\DatingApp\\API\\API.csproj",
+      "projectPath": "C:\\Users\\BongumusaN\\Projects\\DatingApp\\API\\API.csproj",
       "packagesPath": "C:\\Users\\BongumusaN\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\BongumusaN\\Projects\\DatingApp\\API\\obj\\",
+      "outputPath": "C:\\Users\\BongumusaN\\Projects\\DatingApp\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\BongumusaN\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -16293,7 +16293,7 @@
         }
       }
     ],
-    "CSharpLanguageVersion": 1000
+    "CSharpLanguageVersion": 2147483646
   },
   "RootNamespace": "API",
   "Documents": [],

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BongumusaN\\Projects\\DatingApp\\API\\API.csproj": {}
+    "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BongumusaN\\Projects\\DatingApp\\API\\API.csproj": {
+    "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BongumusaN\\Projects\\DatingApp\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\BongumusaN\\Projects\\DatingApp\\API\\API.csproj",
+        "projectPath": "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\API\\API.csproj",
         "packagesPath": "C:\\Users\\BongumusaN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BongumusaN\\Projects\\DatingApp\\API\\obj\\",
+        "outputPath": "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\BongumusaN\\AppData\\Roaming\\NuGet\\NuGet.Config",

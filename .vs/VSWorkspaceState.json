@@ -4,6 +4,10 @@
     "\\API",
     "\\API\\Controllers"
   ],
+<<<<<<< HEAD
   "SelectedNode": "\\API\\Controllers\\AccountController.cs",
+=======
+  "SelectedNode": "\\TestingApp.sln",
+>>>>>>> 09d226565d5fcdcf69ffc72ae28b8befa04fd4db
   "PreviewInSolutionExplorer": false
 }

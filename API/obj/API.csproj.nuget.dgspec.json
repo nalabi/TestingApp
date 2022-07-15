@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\api\\API.csproj": {}
+    "C:\\Users\\BongumusaN\\MyTestingApp-1\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\api\\API.csproj": {
+    "C:\\Users\\BongumusaN\\MyTestingApp-1\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\api\\API.csproj",
+        "projectUniqueName": "C:\\Users\\BongumusaN\\MyTestingApp-1\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\api\\API.csproj",
+        "projectPath": "C:\\Users\\BongumusaN\\MyTestingApp-1\\api\\API.csproj",
         "packagesPath": "C:\\Users\\BongumusaN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\api\\obj\\",
+        "outputPath": "C:\\Users\\BongumusaN\\MyTestingApp-1\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\BongumusaN\\AppData\\Roaming\\NuGet\\NuGet.Config",

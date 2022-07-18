@@ -17,13 +17,13 @@ CurrentUser$ = this.currentUserSource.asObservable();
       map((response:User)=>{
         const user = response;
         if(user){
-          localStorage.setItem('user', JSON.stringify(user))
+          localStorage.setItem('user', JSON.stringify(user));
           this.currentUserSource.next (user);
 
         }
       }
       )
-     
+           
     )
   }
   setCurrentUser(user:User){

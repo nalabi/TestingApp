@@ -7299,11 +7299,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BongumusaN\\MyTestingApp-1\\api\\API.csproj",
+      "projectUniqueName": "C:\\Users\\BongumusaN\\MyTestingApp-1\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\BongumusaN\\MyTestingApp-1\\api\\API.csproj",
+      "projectPath": "C:\\Users\\BongumusaN\\MyTestingApp-1\\API\\API.csproj",
       "packagesPath": "C:\\Users\\BongumusaN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BongumusaN\\MyTestingApp-1\\api\\obj\\",
+      "outputPath": "C:\\Users\\BongumusaN\\MyTestingApp-1\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\BongumusaN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7415,7 +7415,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.106\\RuntimeIdentifierGraph.json"
       }
     }
   },

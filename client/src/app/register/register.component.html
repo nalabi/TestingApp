@@ -7,7 +7,7 @@
     <div class="form-group">
         <label For="select1" >Who is your favourite user?</label>
         <Select id="select1" class="form-control">
-<option *ngFor="let item of usersFromHomeComponent"  [value]="user.userName">
+<option *ngFor="let user of usersFromHomeComponent"  [ngValue]="user.userName">
     {{user.userName}}
 </option>
         </Select>

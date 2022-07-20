@@ -1,20 +1,20 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="#">Testing Application</a>
+        <a class="navbar-brand" routerLink="/" routerLinkActive="active">Testing Application</a>
        
        
           <ul class="navbar-nav mr-auto" *ngIf="accountService.currentUser$ | async">
             <li class="nav-item">
-              <a class="nav-link" href="#">Matches</a>
+              <a class="nav-link " routerLink="/members" routerLinkActive="active" >Matches</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">List</a>
+              <a class="nav-link" routerLink="/lists" routerLinkActive="active">List</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Messages</a>
+              <a class="nav-link" routerLink="/messages" routerLinkActive="active">Messages</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"(click)="logout()" href="#">Logout</a>
+              <a class="nav-link"(click)="logout()" href="#" routerLinkActive="active" >Logout</a>
             </li>
           </ul>
           <div class="dropdown" *ngIf="accountService.currentUser$ | async" dropdown>  
@@ -22,7 +22,7 @@
             <div class="dropdown-menu mt-3" *dropdownMenu>
               <a  class="dropdown-item">Edit Profile</a> 
               <div class="dropdown-divider">  </div>
-              <a  class="dropdown-item"(click)="logout()">Logout</a> 
+              <a  class="dropdown-item"(click)="logout()" routerLinkActive="active">Logout</a> 
               <a  class="dropdown-item"></a> 
             </div>
 

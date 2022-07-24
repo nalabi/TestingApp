@@ -3,19 +3,22 @@
         <a class="navbar-brand" routerLink="/" routerLinkActive="active">Testing Application</a>
        
        
-          <ul class="navbar-nav mr-auto" >
-            <li class="nav-item">
-              <a class="nav-link " routerLink="/members" routerLinkActive="active" >Matches</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLink="/lists" routerLinkActive="active">List</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLink="/messages" routerLinkActive="active">Messages</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"(click)="logout()" href="#" routerLinkActive="active" >Logout</a>
-            </li>
+          <ul class="navbar-nav mr-auto" *ngIf="accountService.currentUser$ | async">
+            <ng-container>
+              <li class="nav-item">
+                <a class="nav-link " routerLink="/members" routerLinkActive="active" >Team Lists</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/lists" routerLinkActive="active">List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/messages" routerLinkActive="active">Messages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"(click)="logout()" href="#" routerLinkActive="active" >Logout</a>
+              </li>
+            </ng-container>
+           
           </ul>
           <div class="dropdown" *ngIf="accountService.currentUser$ | async" dropdown>  
             <a href="" class="dropdown-toggle text-light" dropdownToggle>Welcome user</a>

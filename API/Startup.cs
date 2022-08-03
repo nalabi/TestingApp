@@ -28,6 +28,7 @@ namespace API
             services.AddControllers();
             services.AddCors();
             services.AddSwaggerGen();
+            services.AddIdentityServices(_config);
             
           
          

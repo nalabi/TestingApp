@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
+using API.Middleware;
 
 namespace API
 {
@@ -27,7 +28,6 @@ namespace API
             services.AddApplicationServices(_config);
             services.AddControllers();
             services.AddCors();
-           // services.AddSwaggerGen();
             services.AddIdentityServices(_config);
             
           
@@ -39,9 +39,9 @@ namespace API
             //if (env.IsDevelopment())
            // {
               //  app.UseDeveloperExceptionPage();
-               // app.UseSwagger();
-               // app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebAPIv5 v1"));
+               
            // }
+           app.UseMiddleware<ExceptionMiddleware>();
 
             app.UseHttpsRedirection();
 

@@ -3,8 +3,8 @@
         <a class="navbar-brand" routerLink="/" routerLinkActive="active">Testing Application</a>
        
        
-          <ul class="navbar-nav mr-auto" *ngIf="accountService.currentUser$ | async">
-            <ng-container>
+          <ul class="navbar-nav mr-auto" >
+            <ng-container *ngIf="accountService.currentUser$ | async" >
               <li class="nav-item">
                 <a class="nav-link " routerLink="/members" routerLinkActive="active" >Team Lists</a>
               </li>
@@ -18,7 +18,9 @@
                 <a class="nav-link"(click)="logout()" href="#" routerLinkActive="active" >Logout</a>
               </li>
             </ng-container>
-           
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/errors" routerLinkActive="active">Errors</a>
+            </li>
           </ul>
           <div class="dropdown" *ngIf="(accountService.currentUser$ | async) as user" dropdown>  
             <a href="" class="dropdown-toggle text-light" dropdownToggle>Welcome {{user.username | titlecase}}</a>

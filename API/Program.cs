@@ -1,6 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using API.Entities;
 using API.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace API
 {
@@ -10,10 +11,11 @@ namespace API
         {
             var host = CreateHostBuilder(args).Build();
             using var scope = host.Services.CreateScope();
-            var Services = scope.ServiceProvider;
+            var services = scope.ServiceProvider;
             try
             {
-                var context = Services.GetRequiredService<DataContext>;
+                var context = services.GetRequiredService<DataContext>();
+                await context.Database.MigrateAsync();
             }
             catch (Exception ex)
             {

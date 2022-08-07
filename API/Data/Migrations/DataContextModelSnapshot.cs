@@ -24,11 +24,11 @@ namespace API.Data.Migrations
 
             modelBuilder.Entity("API.Entities.AppUser", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("id"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("City")
                         .HasColumnType("text");
@@ -43,6 +43,9 @@ namespace API.Data.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Gender")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Interests")
                         .HasColumnType("text");
 
                     b.Property<string>("Introduction")
@@ -66,7 +69,7 @@ namespace API.Data.Migrations
                     b.Property<string>("UserName")
                         .HasColumnType("text");
 
-                    b.HasKey("id");
+                    b.HasKey("Id");
 
                     b.ToTable("Users");
                 });

@@ -6,6 +6,7 @@ using API.Entities;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;
+using System.Text;
 
 namespace API.Data
 {
@@ -21,7 +22,7 @@ namespace API.Data
             {
                 using var hmac = new HMACSHA512();
 
-                user.UserName = user.UserName.ToLower(), 
+                user.UserName = user.UserName.ToLower(); 
                 user.PasswordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes("TestApp"));
                 user.PasswordSalt = hmac.Key;
 

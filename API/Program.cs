@@ -1,5 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
 using API.Entities;
+using API.Data;
 
 namespace API
 {
@@ -12,7 +13,7 @@ namespace API
             var Services = scope.ServiceProvider;
             try
             {
-                var context = Services.GetRequiredService<DataContext>
+                var context = Services.GetRequiredService<DataContext>;
             }
             catch (Exception ex)
             {

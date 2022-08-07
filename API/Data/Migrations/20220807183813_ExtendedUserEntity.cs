@@ -10,6 +10,11 @@ namespace API.Data.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.RenameColumn(
+                name: "id",
+                table: "Users",
+                newName: "Id");
+
             migrationBuilder.AddColumn<string>(
                 name: "City",
                 table: "Users",
@@ -38,6 +43,12 @@ namespace API.Data.Migrations
 
             migrationBuilder.AddColumn<string>(
                 name: "Gender",
+                table: "Users",
+                type: "text",
+                nullable: true);
+
+            migrationBuilder.AddColumn<string>(
+                name: "Interests",
                 table: "Users",
                 type: "text",
                 nullable: true);
@@ -85,7 +96,7 @@ namespace API.Data.Migrations
                         name: "FK_Photos_Users_AppUserId",
                         column: x => x.AppUserId,
                         principalTable: "Users",
-                        principalColumn: "id",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -121,6 +132,10 @@ namespace API.Data.Migrations
                 table: "Users");
 
             migrationBuilder.DropColumn(
+                name: "Interests",
+                table: "Users");
+
+            migrationBuilder.DropColumn(
                 name: "Introduction",
                 table: "Users");
 
@@ -135,6 +150,11 @@ namespace API.Data.Migrations
             migrationBuilder.DropColumn(
                 name: "LookingFor",
                 table: "Users");
+
+            migrationBuilder.RenameColumn(
+                name: "Id",
+                table: "Users",
+                newName: "id");
         }
     }
 }

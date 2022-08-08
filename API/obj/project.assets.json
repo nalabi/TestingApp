@@ -7299,11 +7299,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BongumusaN\\MyTestingApp\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\BongumusaN\\MyTestingApp\\APi\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\BongumusaN\\MyTestingApp\\API\\API.csproj",
+      "projectPath": "C:\\Users\\BongumusaN\\MyTestingApp\\APi\\API.csproj",
       "packagesPath": "C:\\Users\\BongumusaN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BongumusaN\\MyTestingApp\\API\\obj\\",
+      "outputPath": "C:\\Users\\BongumusaN\\MyTestingApp\\APi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\BongumusaN\\AppData\\Roaming\\NuGet\\NuGet.Config",

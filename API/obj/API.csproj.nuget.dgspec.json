@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BongumusaN\\MyTestingApp\\API\\API.csproj": {}
+    "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BongumusaN\\MyTestingApp\\API\\API.csproj": {
+    "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BongumusaN\\MyTestingApp\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\BongumusaN\\MyTestingApp\\API\\API.csproj",
+        "projectPath": "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\API\\API.csproj",
         "packagesPath": "C:\\Users\\BongumusaN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BongumusaN\\MyTestingApp\\API\\obj\\",
+        "outputPath": "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,23 +50,31 @@
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[6.0.5, )"
+              "version": "[6.0.8, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.4, )"
+              "version": "[6.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.4, )"
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite.Design": {
+              "target": "Package",
+              "version": "[1.1.6, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.4, )"
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools.DotNet": {
+              "target": "Package",
+              "version": "[2.0.3, )"
             },
             "Microsoft.Extensions.Hosting.WindowsServices": {
               "target": "Package",
@@ -80,13 +88,21 @@
               "target": "Package",
               "version": "[6.18.0, )"
             },
+            "Microsoft.Owin": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
             "Microsoft.Owin.Host.SystemWeb": {
               "target": "Package",
               "version": "[4.2.1, )"
             },
+            "Microsoft.Owin.Security.Jwt": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
             "Microsoft.Owin.Security.OAuth": {
               "target": "Package",
-              "version": "[4.2.1, )"
+              "version": "[4.2.2, )"
             },
             "Npgsql": {
               "target": "Package",
@@ -96,13 +112,13 @@
               "target": "Package",
               "version": "[6.0.4, )"
             },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.2.3, )"
-            },
             "Swashbuckle.AspNetCore.Swagger": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.4.0, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",

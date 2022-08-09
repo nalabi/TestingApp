@@ -101,7 +101,6 @@ C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\API.exe
 C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\API.deps.json
 C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\API.runtimeconfig.json
 C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\API.dll
-C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\ref\API.dll
 C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\API.pdb
 C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\Humanizer.dll
 C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\JWT.dll
@@ -126,7 +125,6 @@ C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\Npgsql.dll
 C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\System.ServiceProcess.ServiceController.dll
 C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.ServiceProcess.ServiceController.dll
@@ -188,7 +186,6 @@ C:\Users\BongumusaN\MyTestingApp-1\API\obj\Debug\net6.0\API.dll
 C:\Users\BongumusaN\MyTestingApp-1\API\obj\Debug\net6.0\ref\API.dll
 C:\Users\BongumusaN\MyTestingApp-1\API\obj\Debug\net6.0\API.pdb
 C:\Users\BongumusaN\MyTestingApp-1\API\obj\Debug\net6.0\API.genruntimeconfig.cache
-C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\Data\Migrations\UserSeedData.json
 C:\Users\BongumusaN\MyTestingApp\API\obj\Debug\net6.0\API.csproj.AssemblyReference.cache
 C:\Users\BongumusaN\MyTestingApp\API\obj\Debug\net6.0\API.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\BongumusaN\MyTestingApp\API\obj\Debug\net6.0\API.AssemblyInfoInputs.cache
@@ -240,3 +237,18 @@ C:\Users\BongumusaN\MyTestingApp\API\obj\Debug\net6.0\ref\API.dll
 C:\Users\BongumusaN\MyTestingApp\API\obj\Debug\net6.0\API.pdb
 C:\Users\BongumusaN\MyTestingApp\API\obj\Debug\net6.0\API.genruntimeconfig.cache
 C:\Users\BongumusaN\MyTestingApp\API\bin\Debug\net6.0\Data\UserSeedData.json
+C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\Data\UserSeedData.json
+C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\Microsoft.Data.Sqlite.dll
+C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Sqlite.Design.dll
+C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\dotnet-ef.dll
+C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\Microsoft.Owin.dll
+C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\Microsoft.Owin.Security.dll
+C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\Microsoft.Owin.Security.Jwt.dll
+C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\Owin.dll
+C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\runtimes\linux-x64\native\libsqlite3.so
+C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\runtimes\osx-x64\native\libsqlite3.dylib
+C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\runtimes\win7-x64\native\sqlite3.dll
+C:\Users\BongumusaN\source\repos\MyTestingApp\API\bin\Debug\net6.0\runtimes\win7-x86\native\sqlite3.dll
+C:\Users\BongumusaN\source\repos\MyTestingApp\API\obj\Debug\net6.0\refint\API.dll

@@ -10,9 +10,9 @@ namespace API.Controllers
     [Authorize]
     public class UsersController : BaseApiController
     {
-        private readonly DataContext _context;
+        private readonly IUserRepository _userRepository;
 
-        public UsersController(IUserRepository _userRepository)
+        public UsersController(IUserRepository userRepository)
         {
             _userRepository = userRepository;
            
@@ -32,7 +32,7 @@ namespace API.Controllers
         [HttpGet("{username}")]
         public async Task<ActionResult<AppUser>> GetUsers(string username)
         {
-            return await _userRepository.GetUserByUserNameAsync(username);
+            return await _userRepository.GetUserByUsernameAsync(username);
 
         }
     }

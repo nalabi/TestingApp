@@ -4,12 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using API.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using API.Entities;
 
 
 namespace API.Data
 {
     public class UserRepository : IUserRepository
     {
+        private readonly DataContext _context;
         public UserRepository(DataContext context)
         {
             _context = context;
@@ -18,7 +20,7 @@ namespace API.Data
         {
             return await _context.Users.FindAsync(id);
         }
-        public async Task<AppUser> GetUserByUserNameAsync(string username)
+        public async Task<AppUser> GetUserByUsernameAsync(string username)
         {
             return await _context.Users.SingleOrDefaultAsync(x => x.UserName == username);
         }

@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BongumusaN\\MyTestingApp\\APi\\API.csproj": {}
+    "C:\\Users\\BongumusaN\\MyTestingApp\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BongumusaN\\MyTestingApp\\APi\\API.csproj": {
+    "C:\\Users\\BongumusaN\\MyTestingApp\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BongumusaN\\MyTestingApp\\APi\\API.csproj",
+        "projectUniqueName": "C:\\Users\\BongumusaN\\MyTestingApp\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\BongumusaN\\MyTestingApp\\APi\\API.csproj",
+        "projectPath": "C:\\Users\\BongumusaN\\MyTestingApp\\API\\API.csproj",
         "packagesPath": "C:\\Users\\BongumusaN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BongumusaN\\MyTestingApp\\APi\\obj\\",
+        "outputPath": "C:\\Users\\BongumusaN\\MyTestingApp\\API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\BongumusaN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -123,7 +127,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.106\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

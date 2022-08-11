@@ -5,17 +5,38 @@ using System.Threading.Tasks;
 using API.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using API.Entities;
-
+using API.DTOs;
+using AutoMapper.QueryableExtensions;
+using AutoMapper;
 
 namespace API.Data
 {
     public class UserRepository : IUserRepository
     {
         private readonly DataContext _context;
-        public UserRepository(DataContext context)
+        private readonly IMapper mapper;
+
+        public UserRepository(DataContext context, IMapper mapper )
         {
             _context = context;
+            this.mapper = mapper;
         }
+
+        public async Task<MemberDto> GetMemberAsync(string username)
+        {
+            return await _context.Users
+            .Where(x => x.UserName == username)
+            .ProjectTo<MemberDto>(this.mapper.ConfigurationProvider)
+            .SingleOrDefaultAsync();
+        }
+
+        public async Task<IEnumerable<MemberDto>> GetMembersAsync()
+        {
+            return await _context.Users
+            .ProjectTo<MemberDto>(this.mapper.ConfigurationProvider)
+            .ToListAsync();
+        }
+
         public async Task<AppUser> GetUserByIdAsync(int id)
         {
             return await _context.Users.FindAsync(id);
@@ -34,11 +55,12 @@ namespace API.Data
             .ToListAsync();
         }
 
-        public async Task<bool> SaveAllAsync(){
-            return await _context.SaveChangesAsync()> 0;
+        public async Task<bool> SaveAllAsync()
+        {
+            return await _context.SaveChangesAsync() > 0;
         }
 
-        public void Update (AppUser user)
+        public void Update(AppUser user)
         {
             _context.Entry(user).State = EntityState.Modified;
         }

@@ -1,3 +1,4 @@
 {
-    "omnisharp.disableMSBuildDiagnosticWarning": false
+    "omnisharp.disableMSBuildDiagnosticWarning": false,
+    "omnisharp.autoStart": true
 }

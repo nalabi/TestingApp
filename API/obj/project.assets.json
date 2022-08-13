@@ -5829,11 +5829,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\MyTestingApp\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\API\\API.csproj",
+      "projectPath": "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\MyTestingApp\\API\\API.csproj",
       "packagesPath": "C:\\Users\\BongumusaN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\API\\obj\\",
+      "outputPath": "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\MyTestingApp\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

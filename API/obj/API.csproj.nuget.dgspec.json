@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\MyTestingApp\\API\\API.csproj": {}
+    "c:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\MyTestingApp\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\MyTestingApp\\API\\API.csproj": {
+    "c:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\MyTestingApp\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\MyTestingApp\\API\\API.csproj",
+        "projectUniqueName": "c:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\MyTestingApp\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\MyTestingApp\\API\\API.csproj",
+        "projectPath": "c:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\MyTestingApp\\API\\API.csproj",
         "packagesPath": "C:\\Users\\BongumusaN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\MyTestingApp\\API\\obj\\",
+        "outputPath": "c:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\MyTestingApp\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -25,8 +25,7 @@
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://pkgs.dev.azure.com/PPECB/Mzansi/_packaging/PPECBCodeFeed/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -47,6 +46,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[11.0.0, )"
+            },
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.18.1, )"
             },
             "JWT": {
               "target": "Package",

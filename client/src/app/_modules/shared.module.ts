@@ -2,12 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { ToastrModule } from 'ngx-toastr';
-import {TabsModule} from 'ngx-bootstrap/tabs'
-import { NgxGalleryModule } from '@kolkov/ngx-gallery';
-import { FileUploadModule } from 'ng2-file-upload';
-import {BsDatepickerModule} from 'ngx-bootstrap/datepicker'
-
-
+import { TabsModule } from 'ngx-bootstrap/tabs';
+import {NgxGalleryModule} from '@kolkov/ngx-gallery';
+import { FormsModule } from '@angular/forms';
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [],
@@ -19,16 +17,15 @@ import {BsDatepickerModule} from 'ngx-bootstrap/datepicker'
     }),
     TabsModule.forRoot(),
     NgxGalleryModule,
-    FileUploadModule,
-    BsDatepickerModule.forRoot()
+    FormsModule,
   ],
-  exports:[
+  exports: [
     BsDropdownModule,
     ToastrModule,
     TabsModule,
     NgxGalleryModule,
-    FileUploadModule,
-    BsDatepickerModule,
+    FormsModule,
+    
   ]
 })
 export class SharedModule { }

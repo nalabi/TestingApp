@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\MyTestingApp\\API\\API.csproj": {}
+    "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\MyTestingApp\\API\\API.csproj": {}
   },
   "projects": {
-    "c:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\MyTestingApp\\API\\API.csproj": {
+    "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\MyTestingApp\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\MyTestingApp\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\MyTestingApp\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "c:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\MyTestingApp\\API\\API.csproj",
+        "projectPath": "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\MyTestingApp\\API\\API.csproj",
         "packagesPath": "C:\\Users\\BongumusaN\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\MyTestingApp\\API\\obj\\",
+        "outputPath": "C:\\Users\\BongumusaN\\source\\repos\\MyTestingApp\\MyTestingApp\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -25,7 +25,8 @@
           "net6.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://pkgs.dev.azure.com/PPECB/Mzansi/_packaging/PPECBCodeFeed/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -51,6 +52,10 @@
               "target": "Package",
               "version": "[1.18.1, )"
             },
+            "EntityFramework6.Npgsql": {
+              "target": "Package",
+              "version": "[6.4.3, )"
+            },
             "JWT": {
               "target": "Package",
               "version": "[9.0.2, )"
@@ -66,6 +71,10 @@
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.8, )"
             },
@@ -113,11 +122,15 @@
             },
             "Npgsql": {
               "target": "Package",
-              "version": "[6.0.4, )"
+              "version": "[6.0.6, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[6.0.4, )"
+              "version": "[6.0.6, )"
+            },
+            "Npgsql.Json.NET": {
+              "target": "Package",
+              "version": "[6.0.6, )"
             },
             "Swashbuckle.AspNetCore.Swagger": {
               "target": "Package",

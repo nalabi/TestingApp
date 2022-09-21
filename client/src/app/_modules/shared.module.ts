@@ -6,6 +6,7 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
 import {NgxGalleryModule} from '@kolkov/ngx-gallery';
 import { FormsModule } from '@angular/forms';
 import {RouterModule} from "@angular/router";
+import { FileUploadModule } from 'ng2-file-upload';
 
 @NgModule({
   declarations: [],
@@ -18,6 +19,7 @@ import {RouterModule} from "@angular/router";
     TabsModule.forRoot(),
     NgxGalleryModule,
     FormsModule,
+    FileUploadModule,
   ],
   exports: [
     BsDropdownModule,
@@ -25,6 +27,7 @@ import {RouterModule} from "@angular/router";
     TabsModule,
     NgxGalleryModule,
     FormsModule,
+    FileUploadModule
     
   ]
 })

@@ -31,6 +31,7 @@ namespace API.Controllers
 
             _mapper = mapper;
             _userRepository = userRepository;
+            _photoService = photoService;
 
         }
 
@@ -44,7 +45,7 @@ namespace API.Controllers
             return Ok(users);
         }
 
-        [HttpGet("{username}")]
+        [HttpGet("{username}", Name = "GetUser")]
         public async Task<ActionResult<MemberDto>> GetUser(string username)
         {
 
@@ -66,11 +67,14 @@ namespace API.Controllers
             return BadRequest("Failed to update user");
         }
 
+
         [HttpPost("add-photo")]
         public async Task<ActionResult<PhotoDto>> AddPhoto(IFormFile file)
         {
             var user = await _userRepository.GetUserByUsernameAsync(User.GetUsername());
+
             var result = await _photoService.AddPhotoAsync(file);
+
             if (result.Error != null) return BadRequest(result.Error.Message);
 
             var photo = new Photo
@@ -85,10 +89,29 @@ namespace API.Controllers
             }
 
             user.Photos.Add(photo);
-            if (await _userRepository.SaveAllAsync())
-                return _mapper.Map<PhotoDto>(photo);
 
-            return BadRequest("Problem adding photo");
+            if (await _userRepository.SaveAllAsync())
+            {
+                return CreatedAtRoute("GetUser", new { username = user.UserName }, _mapper.Map<PhotoDto>(photo));
+            }
+
+            return BadRequest("Problem addding photo");
+        }
+        [HttpPut("set-main-photo/{photoId}")]
+        public async Task<ActionResult> SetMainPhoto(int photoId)
+        {
+            var user = await _userRepository.GetUserByUsernameAsync(User.GetUsername());
+            var photo = user.Photos.FirstOrDefault(x => x.Id == photoId);
+
+            if (photo.IsMain) return BadRequest("This is already your main photo");
+
+            var currentMain = user.Photos.FirstOrDefault(x => x.IsMain);
+            if (currentMain != null) currentMain.IsMain = false;
+            photo.IsMain = true;
+
+            if (await _userRepository.SaveAllAsync()) return NoContent();
+
+            return BadRequest("Failed to set main photo");
         }
     }
 

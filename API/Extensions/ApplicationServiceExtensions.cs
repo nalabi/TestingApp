@@ -15,14 +15,17 @@ namespace API.Extensions
         {
             services.Configure<CloudinarySettings>(config.GetSection("CloudinarySettings"));
             services.AddScoped<ITokenService, TokenService>();
-            services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IPhotoService, PhotoService>();
-           // services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
-           services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
-             services.AddDbContext<DataContext>(options =>
-            {
-                options.UseNpgsql(config.GetConnectionString("DefaultConnection"));
-            });
+            services.AddScoped<LogUserActivity>();
+            services.AddScoped<IUserRepository, UserRepository>();
+
+
+            // services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
+            services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
+            services.AddDbContext<DataContext>(options =>
+           {
+               options.UseNpgsql(config.GetConnectionString("DefaultConnection"));
+           });
 
             return services;
         }

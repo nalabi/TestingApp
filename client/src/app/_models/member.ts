@@ -1,6 +1,8 @@
 import { Photo } from './photo';
 
 export interface Member {
+    result: Member[];
+    pagination: import("c:/Users/BongumusaN/MyTestingApp/client/src/app/_models/pagination").Pagination;
     id: number;
     username: string;
     photoUrl: string;

@@ -21,9 +21,6 @@ namespace API.Controllers
         [HttpGet("users-with-roles")]
         public async Task<ActionResult> GetUsersWithRoles()
         {
-
-
-
             var users = await _userManager.Users
                 .Include(r => r.UserRoles)
                 .ThenInclude(r => r.Role)
@@ -38,7 +35,7 @@ namespace API.Controllers
 
             return Ok(users);
         }
-        [HttpPost("edit-roles/{username")]
+        [HttpPost("edit-roles/{username}")]
         public async Task<ActionResult> EditRoles(string username, [FromQuery] string roles)
         {
             var selectedRoles = roles.Split(",").ToArray();

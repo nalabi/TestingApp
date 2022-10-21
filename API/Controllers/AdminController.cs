@@ -35,6 +35,7 @@ namespace API.Controllers
 
             return Ok(users);
         }
+        [Authorize(Policy = "RequireAdminRole")]
         [HttpPost("edit-roles/{username}")]
         public async Task<ActionResult> EditRoles(string username, [FromQuery] string roles)
         {

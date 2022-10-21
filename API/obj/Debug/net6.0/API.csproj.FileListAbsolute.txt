@@ -451,3 +451,4 @@ C:\Users\BongumusaN\MyTestingApp\api\bin\Debug\net6.0\Microsoft.Extensions.Depen
 C:\Users\BongumusaN\MyTestingApp\api\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\BongumusaN\MyTestingApp\api\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\BongumusaN\MyTestingApp\api\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\BongumusaN\MyTestingApp\api\bin\Debug\net6.0\System.Net.WebSockets.WebSocketProtocol.dll

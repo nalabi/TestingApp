@@ -452,3 +452,4 @@ C:\Users\BongumusaN\MyTestingApp\api\bin\Debug\net6.0\Microsoft.Extensions.FileP
 C:\Users\BongumusaN\MyTestingApp\api\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\BongumusaN\MyTestingApp\api\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\BongumusaN\MyTestingApp\api\bin\Debug\net6.0\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Users\BongumusaN\MyTestingApp\api\bin\Debug\net6.0\API.staticwebassets.runtime.json

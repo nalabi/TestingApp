@@ -14,12 +14,12 @@
 .member-tabset>.nav-tabs>li:hover>a {
     border: 0;
     background: none !important;
-    color: #333333;
+    color: #4e21a2;
 }
 
 .member-tabset>.nav-tabs>li.open>a>i,
 .member-tabset>.nav-tabs>li:hover>a>i {
-    color: #a6a6a6;
+    color: #b91f1f;
 }
 
 .member-tabset>.nav-tabs>li.open .dropdown-menu,
@@ -43,7 +43,7 @@
 
 .member-tabset>.tab-content {
     margin-top: -3px;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     border: 0;
     border-top: 1px solid #eee;
     padding: 15px 0;

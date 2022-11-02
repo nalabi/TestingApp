@@ -1,0 +1,24 @@
+button {
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    color:aqua;
+    background:black;
+  }
+
+  p {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+  }
+
+  h1 {
+    position: absolute;
+    left: 100px;
+    top: 10px;
+  }
+  img{
+    position: absolute;
+    left: 100px;
+    top: 50px;
+  }

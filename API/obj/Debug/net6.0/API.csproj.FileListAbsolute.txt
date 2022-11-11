@@ -687,3 +687,6 @@ C:\Users\BongumusaN\source\TestingApp\api\obj\Debug\net6.0\refint\API.dll
 C:\Users\BongumusaN\source\TestingApp\api\obj\Debug\net6.0\API.pdb
 C:\Users\BongumusaN\source\TestingApp\api\obj\Debug\net6.0\API.genruntimeconfig.cache
 C:\Users\BongumusaN\source\TestingApp\api\obj\Debug\net6.0\ref\API.dll
+C:\Users\BongumusaN\source\TestingApp\api\bin\Debug\net6.0\SendGrid.dll
+C:\Users\BongumusaN\source\TestingApp\api\bin\Debug\net6.0\StarkbankEcdsa.dll
+C:\Users\BongumusaN\source\TestingApp\api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll

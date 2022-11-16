@@ -61,6 +61,17 @@ namespace API.Extensions
                 opt.AddPolicy("ModeratePhotoRole", policy => policy.RequireRole("Admin", "Moderator"));
 
             });
+            services.Configure<IdentityOptions>(opt =>
+            {
+                opt.Password.RequiredLength = 24;
+                opt.Password.RequireLowercase = true;
+                opt.Lockout.MaxFailedAccessAttempts = 20;
+                opt.SignIn.RequireConfirmedAccount = true;
+            }
+
+
+               );
+
 
             return services;
         }

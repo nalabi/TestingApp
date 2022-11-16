@@ -51,6 +51,13 @@ namespace API.Data
 
         }
 
+        public async Task<AppUser> GetUserByEmail(string email)
+        {
+             return await _context.Users
+                .Where(x => x.Email == email)
+                .ProjectTo<AppUser>(_mapper.ConfigurationProvider)
+                .SingleOrDefaultAsync();     }
+
         public async Task<AppUser> GetUserByIdAsync(int id)
         {
             return await _context.Users.FindAsync(id);

@@ -6,7 +6,7 @@ namespace API.Entities
     public class AppUser : IdentityUser<int>
     {
 
-
+        public string Email { get; set; }
         public DateTime DateOfBirth { get; set; }
 
         public string KnownAs { get; set; }

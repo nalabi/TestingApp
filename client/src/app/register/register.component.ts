@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 })
 export class RegisterComponent implements OnInit {
   @Output() cancelRegister = new EventEmitter();
+  @Output() resetPassword = new EventEmitter();
   registerForm: FormGroup;
   maxDate: Date;
   validationErrors: string[] = [];
@@ -28,12 +29,13 @@ export class RegisterComponent implements OnInit {
   initializeForm() {
     this.registerForm = this.fb.group({
       gender: ['male'],
+      email: ['', Validators.required],
       username: ['', Validators.required],
       knownAs: ['', Validators.required],
       dateOfBirth: ['', Validators.required],
       city: ['', Validators.required],
       country: ['', Validators.required],
-      password: ['', [Validators.required, Validators.minLength(4), Validators.maxLength(8)]],
+      password: ['', [Validators.required, Validators.minLength(4), Validators.maxLength(16)]],
       confirmPassword: ['', [Validators.required, this.matchValues('password')]]
     })
 
@@ -57,6 +59,10 @@ export class RegisterComponent implements OnInit {
       this.validationErrors = error;
 
     })
+  }
+
+  passwordreset(){
+    
   }
 
   cancel() {

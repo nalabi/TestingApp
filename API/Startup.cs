@@ -10,6 +10,7 @@ using Microsoft.OpenApi.Models;
 using System.Text;
 using API.Middleware;
 using API.SignalR;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 namespace API
 {
@@ -28,6 +29,7 @@ namespace API
         {
             services.AddApplicationServices(_config);
             services.AddControllers();
+            services.AddSwaggerGen();
             services.AddCors();
             services.AddIdentityServices(_config);
             services.AddSignalR();
@@ -38,11 +40,22 @@ namespace API
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            //if (env.IsDevelopment())
-            // {
-            //  app.UseDeveloperExceptionPage();
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
+            });
+            if (env.IsDevelopment(
 
-            // }
+            ))
+            {
+                app.UseDeveloperExceptionPage();
+
+            }
+
+
+
+
             app.UseMiddleware<ExceptionMiddleware>();
 
             app.UseHttpsRedirection();

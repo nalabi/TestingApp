@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class UserParams {\n  constructor(user) {\n    this.minAge = 18;\n    this.maxAge = 99;\n    this.pageNumber = 1;\n    this.pageSize = 5;\n    this.orderBy = 'lastActive';\n    this.gender = user.gender === 'female' ? 'male' : 'female';\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

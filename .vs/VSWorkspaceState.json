@@ -1,11 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\API",
-    "\\API\\Controllers",
-    "\\API\\Data",
-    "\\API\\DTOs"
+    "\\NewFolder"
   ],
-  "SelectedNode": "\\API\\DTOs\\PhotoDto.cs",
+  "SelectedNode": "\\NewFolder",
   "PreviewInSolutionExplorer": false
 }

@@ -11,7 +11,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:browser-esbu",
           "options": {
             "outputPath": "../API/wwwroot",
             "index": "src/index.html",
@@ -25,8 +25,8 @@
             "styles": [
 
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",    
-              "./node_modules/bootswatch/dist/Spacelab/bootstrap.css",          
+              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+              "./node_modules/bootswatch/dist/Spacelab/bootstrap.css",
               "./node_modules/font-awesome/css/font-awesome.css",
               "./node_modules/ngx-toastr/toastr.css",
               "src/styles.css"

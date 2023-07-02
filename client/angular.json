@@ -11,7 +11,8 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser-esbu",
+         
+         "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "../API/wwwroot",
             "index": "src/index.html",
@@ -24,11 +25,12 @@
             ],
             "styles": [
 
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
-              "./node_modules/bootswatch/dist/Spacelab/bootstrap.css",
-              "./node_modules/font-awesome/css/font-awesome.css",
-              "./node_modules/ngx-toastr/toastr.css",
+              "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/bootswatch/dist/united/bootstrap.css",
+              "node_modules/font-awesome/css/font-awesome.min.css",
+              "node_modules/ngx-toastr/toastr.css",
+              "node_modules/ngx-spinner/animations/line-scale-party.css",
               "src/styles.css"
             ],
             "scripts": []

@@ -25,14 +25,15 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { LoadingInterceptor } from './_interceptors/loading.interceptor';
 import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
 import { TextInputComponent } from './_forms/text-input/text-input.component';
-import { DateInputComponent } from './_forms/date-input/date-input.component';
+import { DatePickerComponent } from './_forms/date-picker/date-picker.component';
 import { MemberMessagesComponent } from './members/member-messages/member-messages.component';
 import { AdminPanelComponent } from './admin/admin-panel/admin-panel.component';
 import { HasRoleDirective } from './_directives/has-role.directive';
-import { UserManagementComponent } from './admin/user-management/user-management.component';
 import { PhotoManagementComponent } from './admin/photo-management/photo-management.component';
 import { RolesModalComponent } from './modals/roles-modal/roles-modal.component';
 import { ConfirmDialogComponent } from './modals/confirm-dialog/confirm-dialog.component';
+import { UserManagementComponent } from './user-management/user-management.component';
+
 
 @NgModule({
   declarations: [
@@ -41,7 +42,6 @@ import { ConfirmDialogComponent } from './modals/confirm-dialog/confirm-dialog.c
     HomeComponent,
     RegisterComponent,
     MemberListComponent,
-    MemberDetailComponent,
     ListsComponent,
     MessagesComponent,
     TestErrorsComponent,
@@ -51,15 +51,15 @@ import { ConfirmDialogComponent } from './modals/confirm-dialog/confirm-dialog.c
     MemberEditComponent,
     PhotoEditorComponent,
     TextInputComponent,
-    DateInputComponent,
-    MemberMessagesComponent,
+    DatePickerComponent,
     AdminPanelComponent,
     HasRoleDirective,
-    UserManagementComponent,
     PhotoManagementComponent,
     RolesModalComponent,
-    ConfirmDialogComponent
-  
+    ConfirmDialogComponent,
+    UserManagementComponent,
+
+
   ],
   imports: [
     BrowserModule,

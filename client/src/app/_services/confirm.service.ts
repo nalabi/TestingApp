@@ -1,44 +1,34 @@
 import { Injectable } from '@angular/core';
-import { BsModalService } from 'ngx-bootstrap/modal';
-import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
-import { Observable } from 'rxjs/internal/Observable';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { ConfirmDialogComponent } from '../modals/confirm-dialog/confirm-dialog.component';
+import { Observable, map } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ConfirmService {
-  bsModelRef: BsModalRef;
+  bsModelRef?: BsModalRef<ConfirmDialogComponent>;
 
   constructor(private modalService: BsModalService) { }
 
-  confirm(title = 'Confirmation',
+  confirm(
+    title = 'Confirmation',
     message = 'Are you sure you want to do this?',
-    btnOkText = 'Ok', btnCancelText = 'Cancel'): Observable<boolean> {
-    const config = {
-      initialState: {
-        title,
-        message,
-        btnOkText,
-        btnCancelText
-      }
-    }
-    this.bsModelRef = this.modalService.show(ConfirmDialogComponent, config);
-    return new Observable<boolean>(this.getResult());
-  }
-
-  private getResult() {
-    return (observer) => {
-      const subscription = this.bsModelRef.onHidden.subscribe(() => {
-        observer.next(this.bsModelRef.content.result);
-        observer.complete();
-      });
-
-      return {
-        unsubscribe() {
-          subscription.unsubscribe();
+    btnOkText = 'Ok',
+    btnCancelText = 'Cancel'): Observable<boolean> {
+      const config = {
+        initialState: {
+          title,
+          message,
+          btnOkText,
+          btnCancelText
         }
       }
-    }
+      this.bsModelRef = this.modalService.show(ConfirmDialogComponent, config);
+      return this.bsModelRef.onHidden!.pipe(
+        map(() => {
+          return this.bsModelRef!.content!.result
+        })
+      )
   }
 }
